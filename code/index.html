@@ -27,7 +27,7 @@
             <img src="images/server.svg" alt="server graphic" class="server">
             <h1>Web Hosting for the Modern Era</h1>
             <p class="subhead">Go serverless and pay only for what you use</p>
-            <img src="images/scroll.svg" alt="scroll down" class="scroll hide-mobile show-dekstop">
+            <img src="images/scroll.svg" alt="scroll down" class="scroll hide-mobile show-desktop">
         </section>
     </div>
     <div class="blue-container">
@@ -54,7 +54,7 @@
                 <li>
                     <figure>
                     <img src="images/user1.png" alt="user pic">
-                    <blockquote>"We are currently looking for dynami ctalen tst ojoin our talen tfactory as Web Develop ers.Who will res ponsibl e for following responsibilities and requirements "</blockquote>
+                    <blockquote>"We are currently looking for dynami ctalen tst ojoin our talent tfactory as Web Develop ers.Who will res ponsibl e for following responsibilities and requirements "</blockquote>
                     <figcaption>-Jane Doe</figcaption>
                     </figure>
                 </li>
@@ -86,5 +86,20 @@
             </div>
         </div>
     </footer>
+    <script>
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function(e){
+            nav.classList.toggle('hide-mobile')
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click', function(e){
+            nav.classList.add('hide-mobile')
+            e.preventDefault();
+        });
+    </script>
 </body>
 </html>
